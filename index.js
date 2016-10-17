@@ -87,8 +87,6 @@ var styles = StyleSheet.create({
     color: 'black'
   },
   wrapper: {
-    padding: 10,
-    marginRight:10,
     backgroundColor: '#e5e5e5',
   }
 });
