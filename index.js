@@ -1,6 +1,6 @@
 /**
  * Created by guguyanhua on 12/11/15.
- * Modify by easyli use react-native above 0.25 on 2016-10-17
+ * Modify by easyli use react-native above on 2016-10-17
  */
 import React,{Component} from 'react'
 import {
@@ -10,7 +10,7 @@ import {
     StyleSheet,
     TextInput,
     TouchableHighlight,
-    TouchableWithoutFeedback
+    TouchableOpacity
 } from 'react-native'
 
 var TimerMixin = require('react-timer-mixin');
@@ -36,10 +36,11 @@ var CountDown = React.createClass({
           <View
               style={[styles.wrapper,this.props.buttonStyle]}
               >
-            <TouchableWithoutFeedback
+            <TouchableOpacity
+             activeOpacity={1}
                 >
               <Text style={[style]}>{this.props.text}({this.state.time})</Text>
-            </TouchableWithoutFeedback>
+            </TouchableOpacity>
           </View>
     } else {
       component =
